@@ -22,11 +22,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/homebridge/homebridge-examples.git"
+    "url": "git://github.com/szaboge/homebridge-mi-smart-plug.git"
   },
   "bugs": {
-    "url": "http://github.com/homebridge/homebridge-examples/issues"
+    "url": "http://github.com/szaboge/homebridge-mi-smart-plug/issues"
   },
+  "homepage": "https://github.com/szaboge/homebridge-mi-smart-plug#readme",
   "devDependencies": {
     "@types/node": "10.17.19",
     "homebridge": "^1.0.4",
