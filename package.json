@@ -5,6 +5,7 @@
   "main": "dist/accessory.js",
   "scripts": {
     "build": "rimraf ./dist && tsc",
+    "watch": "tsc -w",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,11 +31,13 @@
   "homepage": "https://github.com/szaboge/homebridge-mi-smart-plug#readme",
   "devDependencies": {
     "@types/node": "14.14.44",
+    "@types/validator": "^13.1.3",
     "homebridge": "^1.3.4",
     "rimraf": "^3.0.2",
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "miio": "^0.15.6"
+    "miio": "^0.15.6",
+    "validator": "^13.6.0"
   }
 }

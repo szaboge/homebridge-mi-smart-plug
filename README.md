@@ -29,7 +29,7 @@ Before installing this plugin, you should install Homebridge using the [official
         "accessory": "MiSmartPlug",
         "name": "Mi Smart Plug",
         "ip": "X.X.X.X",
-        "token": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "token": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     }
 ]
 ```

@@ -3,8 +3,7 @@ const miio = require('miio');
 export class MiPlug {
 	device: any;
 
-	constructor(private ip: string, private token: string) {
-	}
+	constructor(private ip: string, private token: string) {}
 
 	public async get(): Promise<boolean> {
 		if (!this.device) await this.connect();
@@ -27,11 +26,7 @@ export class MiPlug {
 	}
 
 	private async connect(): Promise<unknown> {
-		try {
-			this.device = await this._connect();
-		} catch (e) {
-			console.log(e);
-		}
+		this.device = await this._connect();
 		return this.device;
 	}
 
