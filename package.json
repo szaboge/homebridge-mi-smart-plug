@@ -1,6 +1,6 @@
 {
   "name": "homebridge-mi-smart-plug",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Homebridge plugin for Xiaomi Mi Smart Plug",
   "main": "dist/accessory.js",
   "scripts": {
