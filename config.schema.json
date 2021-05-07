@@ -17,6 +17,7 @@
         "title": "IP Address",
         "type": "string",
         "placeholder": "192.168.0.100",
+        "format": "ipv4",
         "required": true
       },
       "token": {
