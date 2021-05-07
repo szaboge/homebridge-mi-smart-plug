@@ -19,7 +19,9 @@
   "license": "MIT",
   "files": [
     "LICENSE",
-    "dist"
+    "dist",
+    "config.schema.json",
+    "README.md"
   ],
   "repository": {
     "type": "git",

@@ -1,0 +1,56 @@
+{
+  "pluginAlias": "MiSmartPlug",
+  "pluginType": "accessory",
+  "singular": false,
+  "headerDisplay": "Homebridge Plugin for Xiaomi Mi Smart Plug",
+  "footerDisplay": "Check more information on the [GitHub page](https://github.com/szaboge/homebridge-mi-smart-plug)",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "placeholder": "Mi Smart Plug",
+        "required": true
+      },
+      "ip": {
+        "title": "IP Address",
+        "type": "string",
+        "placeholder": "192.168.0.100",
+        "required": true
+      },
+      "token": {
+        "title": "Token",
+        "type": "string",
+        "placeholder": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "required": true,
+        "minLength": 32,
+        "maxLength": 32
+      },
+      "manufacturer": {
+        "title": "Manufacturer",
+        "type": "string",
+        "placeholder": "Xiaomi"
+      },
+      "model": {
+        "title": "Model",
+        "type": "string",
+        "placeholder": "Mi Smart Plug"
+      }
+    }
+  },
+  "form": [
+    "name",
+    "ip",
+    "token",
+    {
+      "type": "fieldset",
+      "expandable": true,
+      "title": "Branding",
+      "items": [
+        "manufacturer",
+        "model"
+      ]
+    }
+  ]
+}

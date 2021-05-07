@@ -45,8 +45,8 @@ class MiSmartPlugAccessory implements AccessoryPlugin {
 			.on(CharacteristicEventTypes.SET, this.handleSet);
 
 		this.informationService = new hap.Service.AccessoryInformation()
-			.setCharacteristic(hap.Characteristic.Manufacturer, "Xiaomi")
-			.setCharacteristic(hap.Characteristic.Model, "Mi Smart Plug");
+			.setCharacteristic(hap.Characteristic.Manufacturer, config.manufacturer || "Xiaomi")
+			.setCharacteristic(hap.Characteristic.Model, config.model || "Mi Smart Plug");
 
 		log.info('Initialization finished');
 	}
